@@ -13,20 +13,51 @@ class Language
         puts "I'm #{@name} and I was create by #{@creator}!"
     end
 end
-
+puts "================ No. 9 ================"
 lang = Language.new("Ruby", "Yukihiro Matsumoto")
 lang.description
 lang.name = "JavaScript"
 lang.creator = "Mozilla Foundation"
 lang.description
-
+puts "\n\n\n"
 
 
 
 # ===== >>>>> No. 10 <<<<< ===== 
+class Circle
+    @@PI = 3.14159
+    
+    def initialize(r)
+        @radius = r
+    end
+    
+    def setRadius(r)
+        @radius = r
+    end
+    
+    def getRadius()
+        return @radius
+    end
+    
+    def getArea
+        return @@PI * (@radius**2)
+    end
+    
+    def getCircumference
+        return 2 * @@PI * @radius
+    end
+end
 
+puts "================ No. 10 ================"
+circle = Circle.new(2)
+puts circle.getRadius
 
+circle.setRadius(5)
+puts circle.getRadius
+puts circle.getArea
+puts circle.getCircumference
 
+puts "\n\n\n"
 
 
 
