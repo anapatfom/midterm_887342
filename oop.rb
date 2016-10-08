@@ -35,7 +35,7 @@ class Circle
         @radius = r
     end
     
-    def getRadius()
+    def getRadius
         return @radius
     end
     
@@ -49,13 +49,10 @@ class Circle
 end
 
 puts "================ No. 10 ================"
-circle = Circle.new(2)
-puts circle.getRadius
-
-circle.setRadius(5)
-puts circle.getRadius
-puts circle.getArea
-puts circle.getCircumference
+circle = Circle.new(10)
+puts "Area is #{circle.getArea}"
+puts "Diameter is #{circle.getRadius}"
+puts "Circumference is #{circle.getCircumference}"
 
 puts "\n\n\n"
 
