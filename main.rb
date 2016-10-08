@@ -196,6 +196,3 @@ abbr_states.each{|tem|
     end
 }
 puts "\n\n\n"
-
-
-
